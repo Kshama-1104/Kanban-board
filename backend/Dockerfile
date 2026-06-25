@@ -12,8 +12,8 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     && docker-php-ext-install pdo_mysql mbstring exif pcntl bcmath gd zip
 
-# Enable Apache ModRewrite
-RUN a2enmod rewrite
+# Enable Apache ModRewrite and disable conflicting MPM modules
+RUN a2enmod rewrite && (a2dismod mpm_event || true)
 
 # Update Apache configuration to point to Laravel's public directory
 ENV APACHE_DOCUMENT_ROOT /var/www/html/public
