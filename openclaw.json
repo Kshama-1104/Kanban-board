@@ -1,0 +1,29 @@
+{
+  "gateway": {
+    "port": 9000
+  },
+  "channels": {
+    "slack": {
+      "enabled": true,
+      "mode": "socket",
+      "appToken": {
+        "source": "env",
+        "provider": "default",
+        "id": "SLACK_APP_TOKEN"
+      },
+      "botToken": {
+        "source": "env",
+        "provider": "default",
+        "id": "SLACK_BOT_TOKEN"
+      }
+    }
+  },
+  "models": {
+    "coder": {
+      "provider": "ollama",
+      "model": "qwen2.5-coder",
+      "baseUrl": "http://localhost:11434/v1",
+      "apiKey": "ollama"
+    }
+  }
+}
