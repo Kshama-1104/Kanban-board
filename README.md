@@ -8,7 +8,7 @@ This repository contains both the multi-agent orchestration artifacts (configs, 
 
 ## 🌟 Live URL & Walkthrough
 - **Live URL**: https://your-kanban-vite.vercel.app (or run locally using instructions below)
-- **Walkthrough Video**: [Loom/Drive video link here]
+- **Walkthrough Video**: https://drive.google.com/file/d/1flWvhKu1bK3jpL5ipnB1XDqqOZXDIgMg/view?usp=sharing
 
 ---
 
